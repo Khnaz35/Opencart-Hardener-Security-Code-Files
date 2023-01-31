@@ -16,3 +16,12 @@ Require all denied
 #rickroll hackers
 ErrorDocument 403 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 </IfVersion>
+
+#EasyApache 4
+ErrorDocument 403 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+Order Deny,Allow
+Deny from all
+
+#Whitelist your IP
+Allow from xxx.xxxx.xxx.xxx
